@@ -3,8 +3,8 @@ export class CoolDate extends Date{
     super();
   }
 
-  getDate(){
-    // let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    return this.toString();
+  getWeekday(num){
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    return days[num];
   }
 }
