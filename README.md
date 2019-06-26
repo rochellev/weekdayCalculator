@@ -29,4 +29,4 @@ $ npm install
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
 | type date and return day of the week | 06/26/2019 | Wednesday |
-| invalid date results in message | 13/44/2020 | output is "Sorry, not a valid date" |
+| invalid date results in message | 13/44/2020 | output is "Date is not defined" |
