@@ -13,7 +13,7 @@ $(document).ready(function() {
     let dateInput = new CoolDate(yearInput, monthInput, dayInput);
 
 
-    $("#solution").append("<li>" + dateInput.getWeekday(0) + "</li>");
+    $("#solution").append("<li> The date " + (monthInput+1) + "/" + dayInput + "/" + yearInput + " is a " + dateInput.getWeekday() + "! </li>");
 
 
 

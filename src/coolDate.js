@@ -8,7 +8,6 @@ export class CoolDate extends Date{
 
   getWeekday(){
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    // w = (d+ [2.6m - .2] + y + [y/4] + [c/4] - 2c)mod7
     let num = days[this.getDay()];
 
 
