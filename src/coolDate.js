@@ -4,7 +4,7 @@ export class CoolDate extends Date{
   }
 
   getWeekday(num){
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     return days[num];
   }
 }

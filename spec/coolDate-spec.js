@@ -1,6 +1,7 @@
 // test suite for coolDate
 
 // Date(year month day)
+import { CoolDate } from './../src/coolDate.js';
 
 describe('CoolDate', function() {
 

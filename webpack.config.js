@@ -3,7 +3,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -18,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'My Project',
+      title: 'Triangle Tracker',
       template: './src/index.html',
       inject: 'body'
     })
@@ -35,20 +34,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: [
-          /node_modules/,
-          /spec/
-        ],
-        loader: "babel-loader",
-        options: {
-          presets: ['es2015']
-        }
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
+                /node_modules/,
+                /spec/
+              ],
         loader: "eslint-loader"
       }
-
     ]
   }
 };
